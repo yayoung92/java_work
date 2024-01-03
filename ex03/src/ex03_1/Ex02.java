@@ -1,5 +1,7 @@
 package ex03_1;
 
+import java.util.Scanner;
+
 public class Ex02 {
 	public static void main(String[] args) {
 		// && || ! & | ^ ~
@@ -42,6 +44,6 @@ public class Ex02 {
         	answer += my_string.substring(answer.length());
         }
         System.out.println(answer);
-	}
+
 	
 }
