@@ -5,7 +5,7 @@ class OperatorEx8 {
 		int a = 1000000;    // 1,000,000   1�鸸 
 		int b = 2000000;    // 2,000,000   2�鸸 
 
-		long c = a * b;     // a * b = 2,000,000,000,000 ?
+		long c = (long)a * b;     // a * b = 2,000,000,000,000 ?
 
 		System.out.println(c);
 	}

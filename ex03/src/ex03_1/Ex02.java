@@ -44,6 +44,23 @@ public class Ex02 {
         	answer += my_string.substring(answer.length());
         }
         System.out.println(answer);
-
+        
+        String str1 = "aaaaa";
+        String str2 = "bbbbb";
+        String answers = "";
+        for(int i=0; i<str1.length(); i++) {
+        	char c2 = str1.charAt(i);
+        	char c3 = str2.charAt(i);
+        	answers += c2;
+        	answers += c3;
+//        	for(int j=0; j<str2.length(); j++) {
+//        		
+//        		char c3 = str2.charAt(j);
+//        		answers += c3;
+//        		
+//        	}
+       }
+        System.out.println(answers);
+	}
 	
 }

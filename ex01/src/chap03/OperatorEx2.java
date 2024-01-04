@@ -5,12 +5,12 @@ class OperatorEx2 {
 		int i=5, j=0;
 
 		j = i++;
-		System.out.println("j=i++; ���� ��, i=" + i +", j="+ j);
+		System.out.println("j=i++; i=" + i +", j="+ j);
 
-		i=5;        // ����� ���ϱ� ����, i�� j�� ���� �ٽ� 5�� 0���� ����
+		i=5; 
 		j=0;
 
 		j = ++i;
-		System.out.println("j=++i; ���� ��, i=" + i +", j="+ j);
+		System.out.println("j=++i; i=" + i +", j="+ j);
 	}
 }
