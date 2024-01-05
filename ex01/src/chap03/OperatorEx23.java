@@ -1,7 +1,17 @@
 package chap03;
 
+
+class AA{
+	public void doA() {
+		int a = 10;
+		System.out.println("a = " + a);
+	}
+}
 class OperatorEx23 {
 	public static void main(String[] args) {
+		AA aa1 = new AA();
+		aa1.doA();
+		
 		String str1 = "abc";
 		String str2 = new String("abc");
 

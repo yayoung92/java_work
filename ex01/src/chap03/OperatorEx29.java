@@ -12,9 +12,8 @@ class OperatorEx29 {
 		System.out.println();
 		System.out.printf(" n  =%d%n",  n);	
 		System.out.printf("~(n-1)=%d%n", ~(n-1));
-	} // main�� ��
+	}
 
-	// 10�� ������ 2������ ��ȯ�ϴ� �޼���
 	static String toBinaryString(int x) {
 		String zero = "00000000000000000000000000000000";
 		String tmp = zero + Integer.toBinaryString(x);

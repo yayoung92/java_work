@@ -11,9 +11,8 @@ class OperatorEx28 {
 		System.out.printf("%#X & %#X = %#X \t%s%n", x, y, x & y, toBinaryString(x & y));
 		System.out.printf("%#X ^ %#X = %#X \t%s%n", x, y, x ^ y, toBinaryString(x ^ y));
 		System.out.printf("%#X ^ %#X ^ %#X = %#X %s%n", x, y, y, x ^ y ^ y, toBinaryString(x ^ y ^ y));
-	} // main�� ��
+	}
 
-	// 10�� ������ 2������ ��ȯ�ϴ� �޼���
 	static String toBinaryString(int x) {
 		String zero = "00000000000000000000000000000000";
 		String tmp = zero + Integer.toBinaryString(x);
