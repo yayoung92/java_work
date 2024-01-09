@@ -45,10 +45,10 @@ public class Text {
 		//int T = scan.nextInt();
 		for(int i=0; i<z; i++) {
 			for(int j=0; j<=i; j++) {
-				bw.write("*");
+				st = new StringTokenizer(bb.readLine());
+				bw.write((Integer.parseInt(st.nextToken()))+(Integer.parseInt(st.nextToken())));
 			}
-			bw.newLine();
-			
+			//bw.newLine();
 		}
 		
 		bw.close();

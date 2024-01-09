@@ -1,5 +1,7 @@
 package chap04;
 
+import java.util.Arrays;
+
 class FlowEx20 {
 	public static void main(String[] args) { 
 		for(int i=1;i<=5;i++) { 
@@ -8,5 +10,6 @@ class FlowEx20 {
 			}
 			System.out.println();
 		}
-	} // main�� ��
+		
+	} 
 }

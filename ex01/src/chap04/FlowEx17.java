@@ -6,7 +6,7 @@ class FlowEx17 {
 	public static void main(String[] args) { 
 		int num = 0;
 
-		System.out.print(".>");
+		System.out.print("숫자 입력하세요 : ");
 
 		Scanner scanner = new Scanner(System.in);
 		String tmp = scanner.nextLine(); 
