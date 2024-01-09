@@ -1,23 +1,19 @@
 package chap04;
 
-import java.util.*; // ScannerŬ������ ����ϱ� ���� �߰�
+import java.util.*; 
 
 class FlowEx2 {
 	public static void main(String[] args) {  
 		int input;
 
-		System.out.print("���ڸ� �ϳ� �Է��ϼ���.>");
-
 		Scanner scanner = new Scanner(System.in);
-		String tmp = scanner.nextLine(); // ȭ���� ���� �Է¹��� ������ tmp�� ����
-		input = Integer.parseInt(tmp);   // �Է¹��� ���ڿ�(tmp)�� ���ڷ� ��ȯ
+		input = Integer.parseInt(scanner.nextLine());
 
 		if(input==0) {
-			System.out.println("�Է��Ͻ� ���ڴ� 0�Դϴ�.");	
+			System.out.println("0을 입력했네요.");	
 		}
 
 		if(input!=0)
-			System.out.println("�Է��Ͻ� ���ڴ� 0�� �ƴմϴ�.");		
-			System.out.println("�Է��Ͻ� ���ڴ� "+ input +"�Դϴ�.");
-	} // main�� ��
+			System.out.println("0말고 다른것을 입력했네요. \n입력한 숫자: "+ input);	
+	}
 }
