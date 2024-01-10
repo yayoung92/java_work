@@ -5,14 +5,18 @@ class FlowEx29 {
 		for(int i=1;i<=100;i++) {
 			System.out.printf("i=%d ", i);
 
-			int tmp = i;
+			int tmp = i;  // 1
 
 			do {
-				if(tmp%10%3==0 && tmp%10!=0) // tmp%10�� 3�� ������� Ȯ��(0 ����)
+				if(tmp%10%3==0 && tmp%10!=0) {
 					System.out.print("¦");
-			} while((tmp/=10)!=0);  // tmp /= 10�� tmp = tmp / 10�� ����
+				}
+				tmp = tmp / 10;
+				System.out.println("temp : " + tmp);
+				
+			} while(tmp!=0); 
 
 			System.out.println();
 		}
-	} // main
+	} 
 }

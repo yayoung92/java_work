@@ -7,5 +7,14 @@ class FlowEx23 {
 		while(i--!=0) {
 			System.out.println(i + " - I can do it.");
 		}
-	} // main�� ��
+		
+		i =5;
+		while(i!=0) {
+			System.out.println(i-- + " - I can do it.");
+		}
+		
+		for(int j=5; j!=0; j--) {
+			System.out.println(j);
+		}
+	} 
 }
