@@ -18,12 +18,10 @@ public class Test {
 		
 		for(int i=0; i<n; i++) {
 			z[i] = Integer.parseInt(br.readLine());
-			
-		//	bw.write(z[i]);
 		}
 		
 		int y = Integer.parseInt(br.readLine());
-	//	bw.write(y);
+
 		for(int i=0; i<z.length; i++) {
 			if(z[i]==y) {
 				count++;
