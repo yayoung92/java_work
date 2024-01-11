@@ -2,8 +2,8 @@ package chap05;
 
 class ArrayEx5 {
 	public static void main(String[] args) {
-		int sum =0;				// ������ �����ϱ� ���� ����
-		float average = 0f;		// ����� �����ϱ� ���� ����
+		int sum =0;		
+		float average = 0f;	
 
 		int[] score = {100, 88, 100, 100, 90};
 
@@ -11,9 +11,9 @@ class ArrayEx5 {
 			sum += score[i];
 		}
 
-		average = sum / (float)score.length ; // ������� float�� ��� ����.
+		average = sum / (float)score.length ; 
 
-		System.out.println("���� : " + sum);
-		System.out.println("��� : " + average);
+		System.out.println("sum: " + sum);
+		System.out.println("average: " + average);
 	}
 }

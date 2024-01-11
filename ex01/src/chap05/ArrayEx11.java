@@ -6,7 +6,7 @@ class ArrayEx11 {
 		int[] counter = new int[10];
 
 		for (int i=0; i < numArr.length ; i++ ) {
-			numArr[i] = (int)(Math.random() * 10); // 0~9�� ������ ���� �迭�� ����
+			numArr[i] = (int)(Math.random() * 10); // 0~9의 임의의 수를 배열에 저장
 			System.out.print(numArr[i]);
 		}
 		System.out.println();
@@ -16,7 +16,7 @@ class ArrayEx11 {
 		}
 
 		for (int i=0; i < numArr.length ; i++ ) {
-			System.out.println( i +"�� ���� :"+ counter[i]);
+			System.out.println( i +" counter[i] :"+ counter[i]);
 		}
-	} // main�� ��
+	}
 }
