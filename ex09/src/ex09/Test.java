@@ -11,13 +11,16 @@ public class Test {
 	public static void main(String[] args) throws Exception {
 		BufferedReader  br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-		StringTokenizer st ;
+		StringTokenizer st;
 		int n = Integer.parseInt(br.readLine());
 		int[] z = new int[n];
 		int count = 0;
 		
+		st = new StringTokenizer(br.readLine());
+		
 		for(int i=0; i<n; i++) {
-			z[i] = Integer.parseInt(br.readLine());
+			
+			z[i] = Integer.parseInt(st.nextToken());
 		}
 		
 		int y = Integer.parseInt(br.readLine());
