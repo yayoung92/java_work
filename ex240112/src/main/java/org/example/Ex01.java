@@ -42,6 +42,8 @@ public class Ex01 {
 
             System.out.println(ii[i] + " " + jj[i]);
             //bw.write(ii[i] + " " + jj[i] + "\t");
+
+            System.out.println();
         }
 
         bw.close();
