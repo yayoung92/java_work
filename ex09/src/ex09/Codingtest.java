@@ -10,41 +10,38 @@ import java.util.StringTokenizer;
 
 public class Codingtest {
 	public static void main(String[] args) throws Exception{
-
+		int I = 5;
+		int r = 555;
+		int[] answer = {};
+//		String[] a = {};
+		String a = "";
+		int u = 0;
 		
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-//		StringTokenizer st;
-//		st = new StringTokenizer(br.readLine(), " ");
-//		
-//		int n = Integer.parseInt(st.nextToken());
-//		int m = Integer.parseInt(st.nextToken());
-//		
-//		int N[] = new int[n];
-//		for(int i=0; i<n; i++) {
-//			N[i] = i+1;
-//		}
-//		
-//		for(int i=0; i<m; i++) {
-//			st = new StringTokenizer(br.readLine(), " ");
-//			
-//			int a = Integer.parseInt(st.nextToken())-1;
-//			int b = Integer.parseInt(st.nextToken())-1;
-//			
-//			if(a!=b) {
-//				int c = N[a];
-//				N[a] = N[b];
-//				N[b] = c;
-//			}
-//		}
-//		
-//		for(int i : N) {
-//			bw.write(i + " ");
-//		}
-//		
-//		br.close();
-//		bw.close();
+		for(int i=I; i<=r; i++) {		
+			
+			String y = Integer.toString(i);
 
+			char[] c = y.toCharArray();
+			
+			//System.out.println(c);
+			
+			for(int j=0; j<c.length; j++) {
+				char cc = y.charAt(j);
+				//System.out.println(cc);
+				if(cc==5) {
+					u = cc;
+					System.out.println(u);
+				}				
+			}
+		}
+		System.out.println("\r\n"
+				+ "██████╗ ██╗██████╗ ████████╗██╗  ██╗██████╗  █████╗ ██╗   ██╗\r\n"
+				+ "██╔══██╗██║██╔══██╗╚══██╔══╝██║  ██║██╔══██╗██╔══██╗╚██╗ ██╔╝\r\n"
+				+ "██████╔╝██║██████╔╝   ██║   ███████║██║  ██║███████║ ╚████╔╝ \r\n"
+				+ "██╔══██╗██║██╔══██╗   ██║   ██╔══██║██║  ██║██╔══██║  ╚██╔╝  \r\n"
+				+ "██████╔╝██║██║  ██║   ██║   ██║  ██║██████╔╝██║  ██║   ██║   \r\n"
+				+ "╚═════╝ ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝   \r\n"
+				+ "                                                             \r\n"
+				+ "");
 	}
-
 }
