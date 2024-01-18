@@ -17,6 +17,7 @@ public class Main {
 
 			if (input.equals("1")) {
 				db.insert();
+				
 			} 
 			else if (input.equals("2")) {
 				db.select();
