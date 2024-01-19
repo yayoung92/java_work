@@ -105,8 +105,8 @@ public class Login {
 				case 4:
 					// 삭제하는 부분
 					System.out.println("<4.삭제하기>");
-					
 					System.out.println();
+					
 					System.out.println(" [ 삭제되었습니다. ] ");
 					break;
 				case 5:
