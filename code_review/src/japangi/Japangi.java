@@ -7,7 +7,7 @@ public class Japangi {
 		boolean check = true;
 		Drink d = new Drink();
 		Coin m = new Coin();
-		String suscess = "구매 성공! 여기있어! ~_~ 가져가!! ";
+		String suscess = "구매 성공! 여기있어! ~_~ 가져가!! " + "%d";
 
 		Scanner scan = new Scanner(System.in);
 
