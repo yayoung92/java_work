@@ -60,9 +60,8 @@ public class Person {
 	}
 	@Override
 	public String toString() {
-		return "[이름 = " + getPersonName() + ", 전화번호 = " + getPhoneNumber() + ", 나이 = " + getAge() + ", 생일 = " + getDate() + ", MBTI = " + getMBTI() + ", 성별 = " + getGender() + ", 별명 = " + getStar()
+		return "Person [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
 				+ "]";
 	}
-	
 	
 }

@@ -6,8 +6,9 @@ public class Japangi {
 	public static void main(String[] args) {
 		boolean check = true;
 		Drink d = new Drink();
-		Coin m = new Coin();
-		String suscess = "구매 성공! 여기있어! ~_~ 가져가!! " + "%d";
+		Coin c = new Coin();
+		Print p = new Print();
+		String suscess = "구매 성공! 여기있어! ~_~ 가져가!! : ";
 
 		Scanner scan = new Scanner(System.in);
 
@@ -20,97 +21,99 @@ public class Japangi {
 
 			switch (a) {
 				case 1:
-					System.out.println(" \\ 돈 넣어죵 : ");
-					m.setCoin(scan.nextInt());
+					System.out.println("---------------------------");
+					System.out.print(" \\\\^V^// 돈 넣어죵 : ");
+					c.setCoin(scan.nextInt());
+					System.out.println();
 	
-					if (m.getCoin() < d.getW()) {
+					if (c.getCoin() < d.getW()) {
 						System.out.println("돈이 너무 부족할걸?");
 						System.out.println();
 	
-					} else if (m.getCoin() >= d.getC()) {
-						System.out.println("뭐 먹을랭??? 골라골라골라");
+					} else if (c.getCoin() >= d.getC()) {
+						System.out.println("==== 뭐 먹을랭?? 골라골라골라 ====");
 						System.out.println("1.콜라:500원  2.환타:300원  3.물:100원");
+						System.out.print("선택한 번호는 ?!! : ");
 						int number = scan.nextInt();
+						System.out.println();
 	
 						switch (number) {
 						
 							case 1:
-								if (m.getCoin() >= d.getC()) {
+								if (c.getCoin() >= d.getC()) {
 									System.out.println(suscess + d.getCc());
-									m.coin = m.coin - d.c;
-									System.out.println("잔돈은 돌려줄게 : " + m.getCoin());
-								} else
-									System.out.println("돈이 부족해!");
+									c.coin = c.coin - d.c;
+									System.out.println();
+									System.out.println("---------------------------");
+									System.out.println("잔돈은 돌려줄게 : " + c.getCoin());
+								}
 								break stop;
 								
 							case 2:
-								if (m.getCoin() >= d.getH()) {
+								if (c.getCoin() >= d.getH()) {
 									System.out.println(suscess + d.getHh());
-									m.coin = m.coin - d.h;
-									System.out.println("잔돈은 돌려줄게 : " + m.getCoin());
-								} else
-									System.out.println("돈이 부족해!");
+									c.coin = c.coin - d.h;
+									System.out.println();
+									System.out.println("---------------------------");
+									System.out.println("잔돈은 돌려줄게 : " + c.getCoin());
+								}
 								break stop;
 								
 							case 3:
-								if (m.getCoin() >= d.getW()) {
+								if (c.getCoin() >= d.getW()) {
 									System.out.println(suscess + d.getWw());
-									m.coin = m.coin - d.w;
-									System.out.println("잔돈은 돌려줄게 : " + m.getCoin());
-								} else
-									System.out.println("돈이 부족해!");
+									c.coin = c.coin - d.w;
+									System.out.println();
+									System.out.println("---------------------------");
+									System.out.println("잔돈은 돌려줄게 : " + c.getCoin());
+								}
 								break stop;
 								
-							default:
-								if (m.getCoin() < d.w) {
-									System.out.println("최선이야?");
-								}
-								break;
 						}
-					} else if (m.getCoin() < d.getC() && m.getCoin() >= d.getH()) {
-						System.out.println("뭐 먹을랭??? 골라골라골라");
+					} else if (c.getCoin() < d.getC() && c.getCoin() >= d.getH()) {
+						System.out.println("==== 뭐 먹을랭?? 골라골라골라 ====");
 						System.out.println("1.환타:300원  2.물:100원");
+						System.out.print("선택한 번호는 ?!! : ");
 						int number = scan.nextInt();
+						System.out.println();
 	
 						switch (number) {
 								
 							case 1:
-								if (m.getCoin() >= d.getH()) {
+								if (c.getCoin() >= d.getH()) {
 									System.out.println(suscess + d.getHh());
-									m.coin = m.coin - d.h;
-									System.out.println("잔돈은 돌려줄게 : " + m.getCoin());
-								} else
-									System.out.println("돈이 부족해!");
+									c.coin = c.coin - d.h;
+									System.out.println();
+									System.out.println("---------------------------");
+									System.out.println("잔돈은 돌려줄게 : " + c.getCoin());
+								}
 								break stop;
 								
 							case 2:
-								if (m.getCoin() >= d.getW()) {
+								if (c.getCoin() >= d.getW()) {
 									System.out.println(suscess + d.getWw());
-									m.coin = m.coin - d.w;
-									System.out.println("잔돈은 돌려줄게 : " + m.getCoin());
-								} else
-									System.out.println("돈이 부족해!");
+									c.coin = c.coin - d.w;
+									System.out.println();
+									System.out.println("---------------------------");
+									System.out.println("잔돈은 돌려줄게 : " + c.getCoin());
+								}
 								break stop;
 								
-							default:
-								if (m.getCoin() < d.w) {
-									System.out.println("최선이야?");
-								}
-								break;
 						}
-					} else if (m.getCoin() < d.getH() && m.getCoin() >= d.getW()) {
-						System.out.println("뭐 먹을랭??? 골라골라골라");
+					} else if (c.getCoin() < d.getH() && c.getCoin() >= d.getW()) {
+						System.out.println("==== 뭐 먹을랭?? 골라골라골라 ====");
 						System.out.println("1.물:100원");
+						System.out.print("선택한 번호는 ?!! : ");
 						int number = scan.nextInt();
+						System.out.println();
 	
-						switch (number) {
-								
+						switch (number) {								
 							case 1:
-
 								System.out.println(suscess + d.getWw());
-								m.coin = m.coin - d.w;
-								System.out.println("잔돈은 돌려줄게 : " + m.getCoin());
-
+								c.coin = c.coin - d.w;
+								System.out.println();
+								System.out.println("---------------------------");
+								System.out.println("잔돈은 돌려줄게 : " + c.getCoin());
 								break stop;
 						}
 					} 
@@ -196,3 +199,11 @@ class Drink {
 	}
 
 }
+
+class Print{
+	
+	public void printChoice() {
+		System.out.println("뭐 먹을랭??? 골라골라골라");
+	}
+}
+
