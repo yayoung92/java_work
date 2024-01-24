@@ -122,11 +122,14 @@ public class Japangi {
 					break;
 				case 2:
 					System.out.println("잘 가");
-					break stop;
+					if(c.getCoin()!=0) {
+						System.out.println("반환돈은 여기있어 :: " + c.getCoin());
+					}
+					System.exit(0);
+					break;
 					
 				default:
 					System.out.println("잘못 눌렀어");
-					System.out.println();
 					break;
 			}
 		}
