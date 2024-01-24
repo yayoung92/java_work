@@ -8,6 +8,7 @@ public class Japangi {
 		Drink d = new Drink();
 		Coin c = new Coin();
 		Print p = new Print();
+		
 		String suscess = "구매 성공! 여기있어! ~_~ 가져가!! : ";
 
 		Scanner scan = new Scanner(System.in);
@@ -23,14 +24,15 @@ public class Japangi {
 				case 1:
 					System.out.println("---------------------------");
 					System.out.print(" \\\\^V^// 돈 넣어죵 : ");
-					c.setCoin(scan.nextInt());
+					c.coin += scan.nextInt();
 					System.out.println();
 	
-					if (c.getCoin() < d.getW()) {
+					if (c.coin< d.getW()) {
 						System.out.println("돈이 너무 부족할걸?");
+						System.out.println("돈을 더 넣어볼래??");
 						System.out.println();
 	
-					} else if (c.getCoin() >= d.getC()) {
+					} else if (c.coin >= d.getC()) {
 						System.out.println("==== 뭐 먹을랭?? 골라골라골라 ====");
 						System.out.println("1.콜라:500원  2.환타:300원  3.물:100원");
 						System.out.print("선택한 번호는 ?!! : ");
@@ -40,7 +42,7 @@ public class Japangi {
 						switch (number) {
 						
 							case 1:
-								if (c.getCoin() >= d.getC()) {
+								if (c.coin>= d.getC()) {
 									System.out.println(suscess + d.getCc());
 									c.coin = c.coin - d.c;
 									System.out.println();
@@ -50,7 +52,7 @@ public class Japangi {
 								break stop;
 								
 							case 2:
-								if (c.getCoin() >= d.getH()) {
+								if (c.coin>= d.getH()) {
 									System.out.println(suscess + d.getHh());
 									c.coin = c.coin - d.h;
 									System.out.println();
@@ -60,7 +62,7 @@ public class Japangi {
 								break stop;
 								
 							case 3:
-								if (c.getCoin() >= d.getW()) {
+								if (c.coin >= d.getW()) {
 									System.out.println(suscess + d.getWw());
 									c.coin = c.coin - d.w;
 									System.out.println();
@@ -70,7 +72,7 @@ public class Japangi {
 								break stop;
 								
 						}
-					} else if (c.getCoin() < d.getC() && c.getCoin() >= d.getH()) {
+					} else if (c.coin< d.getC() &&c.coin>= d.getH()) {
 						System.out.println("==== 뭐 먹을랭?? 골라골라골라 ====");
 						System.out.println("1.환타:300원  2.물:100원");
 						System.out.print("선택한 번호는 ?!! : ");
@@ -80,7 +82,7 @@ public class Japangi {
 						switch (number) {
 								
 							case 1:
-								if (c.getCoin() >= d.getH()) {
+								if (c.coin>= d.getH()) {
 									System.out.println(suscess + d.getHh());
 									c.coin = c.coin - d.h;
 									System.out.println();
@@ -90,7 +92,7 @@ public class Japangi {
 								break stop;
 								
 							case 2:
-								if (c.getCoin() >= d.getW()) {
+								if (c.coin >= d.getW()) {
 									System.out.println(suscess + d.getWw());
 									c.coin = c.coin - d.w;
 									System.out.println();
@@ -100,7 +102,7 @@ public class Japangi {
 								break stop;
 								
 						}
-					} else if (c.getCoin() < d.getH() && c.getCoin() >= d.getW()) {
+					} else if (c.coin< d.getH() && c.coin>= d.getW()) {
 						System.out.println("==== 뭐 먹을랭?? 골라골라골라 ====");
 						System.out.println("1.물:100원");
 						System.out.print("선택한 번호는 ?!! : ");
@@ -121,6 +123,11 @@ public class Japangi {
 				case 2:
 					System.out.println("잘 가");
 					break stop;
+					
+				default:
+					System.out.println("잘못 눌렀어");
+					System.out.println();
+					break;
 			}
 		}
 	}
