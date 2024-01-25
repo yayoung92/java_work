@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class Japangi {
 	public static void main(String[] args) {
-		boolean check = true;
 		Drink d = new Drink();
 		Coin c = new Coin();
-		Print p = new Print();
 		
 		String suscess = "구매 성공! 여기있어! ~_~ 가져가!! : ";
 
 		Scanner scan = new Scanner(System.in);
 
-		stop: while (check) {
+		stop: while (true) {
 			System.out.println("======= 골라보렴 자판기 =======");
 			System.out.println("콜라:500원  환타:300원  물:100원");
 			System.out.println("1.돈 넣기 , 2.그냥 안 먹을래");
+			
 			int a = scan.nextInt();
+			
 			System.out.println();
 
 			switch (a) {
@@ -206,14 +206,6 @@ class Drink {
 	}
 	public void setW(int w) {
 		this.w = w;
-	}
-
-}
-
-class Print{
-	
-	public void printChoice() {
-		System.out.println("뭐 먹을랭??? 골라골라골라");
 	}
 }
 
